@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.16)
+project(HTMLToPNGConverter)
+
+set(CMAKE_CXX_STANDARD 14)
+
+find_package(Qt5 COMPONENTS Widgets WebEngineWidgets REQUIRED)
+
+add_executable(HTMLToPNGConverter main.cpp)
+
+target_link_libraries(HTMLToPNGConverter Qt5::Widgets Qt5::WebEngineWidgets)
